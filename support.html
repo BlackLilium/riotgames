@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/support.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/index.css.map" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<div class="header"></div>
+
+
+    <div class="header1">
+        <div class="header__container">
+            <div class="logo-wrapper">
+                <a class="logo" href="#" alt="logo"><img src="./images/logo.png" alt="logo"></a>
+            </div>
+            <div class="search-box">
+                <div id="zd-main-search">
+                    <form role="search" class="search">
+                        <input type="search" placeholder="무엇을 도와드릴까요?" role="combobox" name="query" id="query" label for="sbox">
+                        <button type="submit" name="commit" value="검색" placeholder="무엇을 도와드릴까요?" >
+                            <i class="fas fa-search"></i></label>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main role="main">
+        <div class="container">
+            <div class="container-inner">
+                <div class="custom-blocks" id="custom-blocks">
+                    <div class="row column-custom-block clearfix">
+                        <a href="#" class="custom-block__link">
+                            <div class="custom-block__icon">
+                                <img src="./images/결제및rp문제.svg" alt="" class="custom-block__images">
+                            </div>
+                            <h4 class="custom-block__title">결제 및 RP 문제</h4>
+                        </a>
+                    </div>
+                    <div class="row column-custom-block clearfix">
+                        <a href="#" class="custom-block__link">
+                            <div class="custom-block__icon">
+                                <img src="./images/system.svg" alt="" class="custom-block__images">
+                            </div>
+                            <h4 class="custom-block__title">시스템 문제 해결하기</h4>
+                        </a>
+                    </div>
+                    <div class="row column-custom-block clearfix">
+                        <a href="#" class="custom-block__link">
+                            <div class="custom-block__icon">
+                                <img src="./images/계정및보안.svg" alt="" class="custom-block__images">
+                            </div>
+                            <h4 class="custom-block__title">계정 및 보안</h4>
+                        </a>
+                    </div>
+                    <div class="row column-custom-block clearfix">
+                        <a href="#" class="custom-block__link">
+                            <div class="custom-block__icon">
+                                <img src="./images/신고.svg" alt="" class="custom-block__images">
+                            </div>
+                            <h4 class="custom-block__title">게임 종료 후 플레이어 신고하기</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category-list-container">
+            <div class="container">
+                <div class="container-inner">
+                    <h3 class="category-list-title">도움이 필요한 유형을 선택해주세요.</h3>
+                    <ul class="category-list row" id="category-list">
+                        <li class="row column-custom-block">
+                            <a href="#" class="category-list-item__link">
+                                <div class="custom-block__icon"><img src="./images/leagueoflegend.svg" alt=""></div>
+                                <span>리그오브레전드 기본</span>
+                            </a>
+                        </li>
+                        <li class="row column-custom-block">
+                            <a href="#" class="category-list-item__link">
+                                <div class="custom-block__icon"><img src="./images/계정정보및보안.svg" alt=""></div>
+                                <span>계정 정보 및 보안</span>
+                            </a>
+                        </li>
+                        <li class="row column-custom-block">
+                            <a href="#" class="category-list-item__link">
+                                <div class="custom-block__icon"><img src="./images/랭크,명예,격전 및 보상.svg" alt=""></div>
+                                <span>랭크, 명예, 격전 및 보상</span>
+                            </a>
+                        </li>
+                        <li class="row column-custom-block">
+                            <a href="#" class="category-list-item__link">
+                                <div class="custom-block__icon"><img src="./images/성능,하드웨어문제,버그.svg" alt=""></div>
+                                <span>성능, 하드웨어 문제, 버그</span>
+                            </a>
+                        </li>
+                        <li class="row column-custom-block">
+                            <a href="#" class="category-list-item__link">
+                                <div class="custom-block__icon"><img src="./images/로그인,패치,연결및충돌.svg" alt=""></div>
+                                <span>로그인, 패치, 연결 및 충돌</span>
+                            </a>
+                        </li>
+                        <li class="row column-custom-block">
+                            <a href="#" class="category-list-item__link">
+                                <div class="custom-block__icon"><img src="./images/상점,선물하기.svg" alt=""></div>
+                                <span>상점, 선물하기 및 RP 충전</span>
+                            </a>
+                        </li>
+                        <li class="row column-custom-block">
+                            <a href="#" class="category-list-item__link">
+                                <div class="custom-block__icon"><img src="./images/신고.svg" alt=""></div>
+                                <span>신고, 제재 및 이용제한</span>
+                            </a>
+                        </li>
+                        <li class="row column-custom-block">
+                            <a href="#" class="category-list-item__link">
+                                <div class="custom-block__icon"><img src="./images/이벤트.svg" alt=""></div>
+                                <span>이벤트, 상품 및 기타</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="submit-a-ticket">
+            <div class="container">
+                <div class="container-inner">
+                    <h2 class="submit-a-ticket__title">원하는 내용을 찾을 수 없으셨나요?</h2>
+                    <p class="submit-a-ticket__subtitle">어떠한 내용이라도 답변드릴 준비가 되어 있습니다! 문의를 보내주세요! 가능한 한 빨리 답변 드리도록 하겠습니다.</p>
+                    <a href="#" class="btn btn--primary submit-a-ticket__btn">/ 문의하기</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-articles">
+            <div class="container">
+                <div class="container-inner">
+                    <div class="footer-articles__container">
+                        <div class="articles-list">
+                            <h3 class="articles-list-title">유용한 글</h3>
+                            <div class="taps">
+                                <div class="taps-menu">
+                                    <span class="taps-link is-active">인기</span>
+                                    <span class="taps-link">최신</span>
+                                </div>
+                                <div class="tap">
+                                    <ul>
+                                        <li><a href="#"><span>마법공학 정비소</span></a></li>
+                                        <li><a href="#"><span>연결 문제 해결</span></a></li>
+                                        <li><a href="#"><span>업데이트된 클라이언트</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tap is-hidden">
+                                    <ul>
+                                        <li><a href="#"><span>마법공학 정비소</span></a></li>
+                                        <li><a href="#"><span>연결 문제 해결</span></a></li>
+                                        <li><a href="#"><span> 알려진문제</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles-list" style="background-color: white;"></div>
+                        <div class="articles-list">
+                            <h3 class="articles-list-title">흥미로운 글</h3>
+                            <div class="taps">
+                                <div class="taps-menu">
+                                    <span class="taps-link is-active">인기</span>
+                                    <span class="taps-link">최신</span>
+                                </div>
+                                    <div class="tap">
+                                        <ul>
+                                            <li><a href="#"><span>게임 종료 후 플레이어 신고하기</span></a></li>
+                                            <li><a href="#"><span>제가 리그 오브 레전드에 얼마나 많은 금액을 사용했나요?</span></a></li>
+                                            <li><a href="#"><span>리그 오브 레전드 계정이름이 중복되는지 궁굼하신가요?</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tap is-hidden">
+                                        <ul>
+                                            <li><a href="#"><span>마법공학 정비소</span></a></li>
+                                            <li><a href="#"><span>연결 문제 해결</span></a></li>
+                                            <li><a href="#"><span> 알려진문제</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer"></div>
+
+    
+    <script src="./js/common.js"></script>
+    <script>
+
+
+
+$('.articles-list').each(function() {
+    var tapsLinks = $(this).find('.taps-link'); // 모든 탭 링크 요소 가져오기
+    var tapContainers = $(this).find('.tap');   // 모든 탭 컨테이너 요소 가져오기
+
+    tapsLinks.each(function(index) {
+        $(this).on('click', function() {
+            // 이 articles-list 내의 모든 탭 링크 요소에서 'is-active' 클래스 제거
+            tapsLinks.removeClass('is-active');
+            // 클릭한 탭 링크에 'is-active' 클래스 추가
+            $(this).addClass('is-active');
+
+            // 이 articles-list 내의 모든 탭 컨테이너 요소를 숨김 처리
+            tapContainers.addClass('is-hidden');
+            // 해당 인덱스의 탭 컨테이너만 표시
+            tapContainers.eq(index).removeClass('is-hidden');
+        });
+    });
+});
+
+    </script>
+
+</body>
+</html>

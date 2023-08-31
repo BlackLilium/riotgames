@@ -1,0 +1,157 @@
+html {height: 100%;}
+body {font-family: sans-serif; font-size: 18px; line-height: 1.6; letter-spacing: 0.03em;
+    text-decoration: none solid rgb(26, 29, 33); display: block; box-sizing: border-box;
+    margin: 80px 0px 0px 0px; padding: 0px; width: 100%; position: static; overflow-x: hidden;}
+a {color: black; /* 평상시에는 검정색 */ text-decoration: none; /* 밑줄 제거 */}
+.header__container {height: 438px;background: 50% 100%; background-image: url('../images/background1.jpg');
+    background-repeat: no-repeat; width: 100%; margin: 0 0 0 0; position: relative;}
+.logo-wrapper{ background-color: #ffffff; background: 0% 0%;
+    position: absolute;
+    top: 100px;
+    left: 50%; /* 가운데로 위치시키기 위해 */
+    transform: translateX(-50%); /* 가운데 정렬 */
+    height: 88.5px;
+    width: 100%;
+    text-align: center;}
+.logo { display: inline-block; height: 80px; width: 206px;
+    max-width: 100%; overflow: clip; cursor: pointer; }
+    .search {
+        position: absolute; /* 절대 위치 설정 */
+        top: 200px; /* .header__container 내에서 150px 아래에 위치 */
+        left: 50%; /* 가운데로 위치시키기 위해 */
+        transform: translateX(-50%); /* 가운데 정렬 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 635px;
+        margin: 0 auto; /* 가로 중앙 정렬 */
+        max-width: 100%
+    }
+    
+    /* 나머지는 동일하게 유지 */
+    .search input[type="search"] {
+        height: 60px;
+        width: 100%;
+        border: 1px solid #BAC2CC;
+        cursor: text;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20.8px;
+        margin-right: 10px;
+    }
+    
+    .search button[type="submit"] {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        font-size: 24px;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    @media screen and (max-width: 635px) {
+        .search input[type="search"] {
+            width: calc(100% - 50px);
+        }
+    }
+    
+    @media screen and (min-width: 768px) {
+        .search input[type="search"] {
+            height: 50px; /* 큰 화면일 때 높이를 늘립니다 */
+            font-size: 24px; /* 큰 화면일 때 글꼴 크기를 키웁니다 */
+        }
+    }
+/* // 첫번째 박스 클리어! */
+.custom-blocks { overflow: hidden; text-align: center; display: flex; flex-wrap: wrap; 
+    justify-content: center; align-items: center; max-width: 1400px;
+    height: auto; width: 100%; margin: 0 auto; padding: 20px 0 20px 0; }
+.column-custom-block:hover {transform: rotate(10deg);}
+.column-custom-block { width: calc(25% - 40px); margin: 0 10px 29px 10px;  padding: 0 16px 0 16px;
+    box-sizing: border-box; position: relative; display: inline-block;
+    text-align: center; vertical-align: top;}
+@media screen and (max-width: 768px) {
+    .column-custom-block {
+        width: calc(50% - 40px);
+    }
+}
+@media screen and (max-width: 480px) {
+    .column-custom-block {
+        width: 100%;
+    }
+}
+.custom-block__link { display: block; text-align: center;
+    text-decoration: none; color: inherit; max-width: 200px;}
+.custom-block__title:hover { color: red;}
+.custom-block__icon { margin: 0 auto; max-height: 100px; max-width: 100px;
+    transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out 0s;}
+.custom-block__title { text-align: center; margin: 0;}
+.container { max-width: 1400px; margin: 0 auto; padding: 0 30px 0 30px; text-align: center;}
+
+/* // 두번째 박스 나온다 */
+.container-inner { max-width: 1400px; justify-content: center;}
+.container-inner > ul > li { box-sizing: border-box; border: 2px solid black;  margin: 10px;  padding: 10px; }
+.column-custom-block img { display: block; margin: 0 auto;}
+.category-list-title { height: 40px; line-height: 40px; text-align: center;
+    margin: 50px 0 70px 0; font-size: 30px;}
+.category-list-item__link:hover { color: red;}
+.category-list-item__link { font-size: 15px;}
+/* 세번째 문단 */
+.submit-a-ticket{ background: 50% 50%; background-image: url('../images/background2.jpg');
+    background-repeat: no-repeat; height: 500px; padding: 70px 0 85px 0; 
+    text-align: center; justify-content: center;}
+.submit-a-ticket__title{ height: 40px; line-height: 40px; text-align: center;
+    margin: 50px 0 70px 0; font-size: 40px; letter-spacing: 1.2px; }
+.submit-a-ticket__subtitle { height: 40px; line-height: 40px; text-align: center;
+    margin: 0 0 70px 0; font-size: 22px; letter-spacing: 1.2px; }
+.btn { font-size: 14px; font-weight: 700; line-height: 16px;
+    text-decoration: none solid rgb(255,255,255); text-align: center; 
+    vertical-align: middle; white-space: nowrap; background-color: #E4373C;
+    color: #ffffff; position: color white; border: 2px solid #E4373C;
+    height: 40px; width: 240px; min-width: 240px; padding: 11px 24px 9px 24px;
+    display: inline-block; cursor: pointer;}
+
+/* 네번째?????????? */
+.footer-articles {padding: 100px 0 100px 0; position: color #1a1d21;
+    background-color: #ffffff; background: 0% 0%;}
+.footer-articles__container { display: flex; justify-content: center;}
+.articles-list {background-color: #242424;  position: color #ffffff;
+    padding: 40px 50px 40px 50px; min-height: auto; min-width: auto;
+    display: block; box-sizing: border-box; align-items: center; }
+.articles-list-title {font-size: 32px; font-weight: 800; line-height: 48px;
+    text-decoration: none solid rgb(255, 255, 255); text-align: center;
+    word-spacing: 0px; height: 48px; margin: 0 0 29px 0; color: #ffffff;}
+.taps { margin: 0 0 29px 0; padding: 10px 30px 10px 30px; display: block;}
+.taps-menu { line-height: 28.8px; text-decoration: none solid rgb(255, 255, 255);
+    text-align: center; height: 40px; width: 345px; display: block;
+    color: rgb(120, 100, 104); justify-content: center; text-align: center; align-items: center;}
+.taps-link { font-size: 10px; font-weight: 700; letter-spacing: 0.54px; line-height: 24px; 
+    text-transform: uppercase; height: 25px; width: 22px; margin: 0 25px 0 25px;
+    display: inline-block; cursor: pointer; justify-content: center; text-align: center; align-items: center; }
+.articles-list ul {list-style: none; }
+.is-active {color: #fff; border-bottom: 1px solid #E4373C;}
+.tap {display: none;}
+.tap:not(.is-hidden) { display: block;}
+.tap li {border-top: 1px solid #ffffff; height: 90px; position: relative; display: flex;
+    z-index: 2; cursor: pointer; box-sizing: border-box; align-items: center; /* 수직 중앙 정렬 */ justify-content: center; /* 수평 중앙 정렬 */}
+.tap li:last-child  {border-bottom: 1px solid #ffffff;}
+.tap li:last-child:hover  {-moz-border-top-colors: 1px solid #E4373C;border-bottom: 1px solid #E4373C;}
+.tap li:hover {border-top: 1px solid #E4373C; border-left: none; border-right: none; }
+.tap li:hover+li { border-top: 1px solid #E4373C; border-left: none; border-right: none; }
+.tap li:hover span {color: #E4373C;}
+.tap a span{ font-size: 14px; font-weight: 700; letter-spacing: 0.54px; line-height: 20px;
+    color: #ffffff; height: 40px; text-align: center; max-width: 244px; max-height: auto;
+    display: block; cursor: pointer; height: 20px; min-height: auto; min-width: auto;}
+
+@media screen and (max-width: 768px) {
+    .footer-articles {
+        padding: 50px 0 50px 0;
+    }
+    .footer-articles__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .articles-list {
+        padding: 20px;
+    }
+}

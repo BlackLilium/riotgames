@@ -1,0 +1,84 @@
+/* 전체 HTML 영역을 차지하도록 설정 */
+html { height: 100%;}
+/* 기본 스타일 초기화 */
+body {margin: 0; padding: 0; font-family: sans-serif;
+    background-image: url('../images/loginimg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; /* 배경 이미지를 비율에 맞게 늘리거나 줄임 */
+    background-position: center center; /* 배경 이미지를 가운데 정렬 */
+    display: flex; align-items: center; justify-content: center;
+    height: 100vh; color: white;}
+/* 가입 박스 스타일 설정 */
+a { text-decoration: none; color: white;}
+/*member sign in*/
+.member { position: relative; width: 100%; /* Full width */
+    max-width: 500px; margin: auto; padding: 20px; 
+    box-sizing: border-box; background: rgba(38, 38, 38, 0.8);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; font-size: 16px;}
+.member h2 { margin: 0 0 30px; padding: 0;
+    color: white; text-align: center; }
+.member b {display: block; margin-bottom: 5px;}
+.member .field {position: relative;}
+/* Input fields */
+.member input:not(input[type="radio"]),
+.member select {border: 1px solid #dadada; padding: 4px 0px 4px 0;
+    width: 100%; margin-bottom: 10px; font-size: 16px;
+    background:rgba(240, 240, 240, 0.2); color: white;}
+.member .field input::placeholder {color: white; /* placeholder 텍스트 색상 */}
+.member .field.gender {margin-bottom: 20px;}
+/* Buttons */
+.member input[type="button"],
+.member input[type="submit"] {background-color: #243b55;
+    color: rgba(255, 255, 255, 0.9); padding: 10px 20px;
+    font-size: 16px; text-align: center;}
+.member .submit-button {background: rgba(38, 38, 38, 0.8);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); text-align: center;}
+/* Footer text size */
+.member-footer {text-align: center; font-size: 12px; margin-top: 10px; color: white;}
+.member-footer div a:hover {text-decoration: underline; color: rgba(38, 38, 38, 0.8);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);}
+.member-footer div a:after {content: '|'; font-size: 10px; color: #bbb;
+    margin-right: 5px; margin-left: 7px; display: inline-block; transform: translateY(-1px);}
+.member-footer div a:last-child:after {display: none;}
+.member-footer span { margin-top: 10px;}
+.member-footer a img,
+.member-footer span a img {vertical-align: middle; /* 이미지와 텍스트 수직 정렬 */
+    margin: 0 5px; /* 이미지와 텍스트 사이 여백 */ height: 20px; margin-top: 10px;}
+.member h2 a img {height: 50px; margin-right: 30px;}
+
+
+/* login css */
+
+/* 로그인 박스 스타일 설정 */
+.login-box { position: absolute; top: 50%; left: 50%; width: 400px; padding: 40px; 
+    transform: translate(-50%, -50%); background: rgba(38, 38, 38, 0.6);
+    box-shadow: 0 15px 25px rgba(255, 255, 255, 0.7); border-radius: 10px;
+    box-sizing: border-box;}
+/* 로그인 타이틀 스타일 설정 */
+.login-box h2 {margin: 0 0 30px; padding: 0; color: white; text-align: center;}
+/* 입력 필드 스타일 설정 */
+.login-box .user-box { position: relative;}
+.login-box .user-box input { width: 100%; padding: 10px 0; font-size: 16px; color: white;
+    margin-bottom: 30px; border: none; border-bottom: 1px solid white;
+    outline: none; background: transparent;}
+.login-box .user-box label{color: white; position: absolute; padding: 10px 0; font-size: 16px;}
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {top: -20px; left: 0; color: white; font-size: 12px;}
+.login-box .user-box1 .checkbox-label {font-size: 14px; margin-left: 10px; cursor: pointer; 
+    display: inline-flex; align-items: center; color: white;}
+/* 로그인 버튼 스타일 설정 */
+.login-box form button.submit-button {position: relative; display: flex; justify-content: center;
+    align-items: center; width: 36px; height: 36px; /* 원하는 박스 크기로 조정 */ border-radius: 30%; /* 박스를 원형으로 만듦 */
+    background: none; border: none; cursor: pointer; margin-top: 40px; letter-spacing: 4px;
+    display: flex; justify-content: center; align-items: center; margin: 0 auto; /* 가운데 정렬 */}
+.login-box form button.submit-button:hover {background: #243b55; color: #03e9f4; border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;}
+/* 소셜 아이콘 스타일 설정 */
+.login-box .icon-container {display: flex; justify-content: space-between; align-items: center; margin: 12px 0;}
+.login-box .icon {display: inline-block; width: 68.83px; height: 18px; background-size: contain;
+    background-repeat: no-repeat; text-align: center;}
+/* 계정 관련 링크 스타일 설정 */
+.login-box .create-account { color: white; text-align: center; margin-top: 20px;}
+.login-box .create-account a {color: #03e9f4; text-decoration: none;}
